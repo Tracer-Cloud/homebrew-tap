@@ -11,9 +11,9 @@ brew install <FORMULA>
 
 ## Formulae
 
-Repository | Formula | Description
---- | --- | ---
-opensre | [formula](/Users/vaibhavupreti/work/tracer/homebrew-tap/Formula/opensre.rb) | Open-source SRE agent for automated incident investigation and root cause analysis
+| Repository | Formula                         | Description                                                                        |
+| ---------- | ------------------------------- | ---------------------------------------------------------------------------------- |
+| opensre    | [formula](./Formula/opensre.rb) | Open-source SRE agent for automated incident investigation and root cause analysis |
 
 ## Documentation
 
