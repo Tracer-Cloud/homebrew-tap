@@ -4,6 +4,8 @@ class Opensre < Formula
   version "0.1.2026.7.18"
   license "Apache-2.0"
 
+  depends_on "gh"
+
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Tracer-Cloud/opensre/releases/download/v#{version}/opensre_#{version}_darwin-arm64.tar.gz"
