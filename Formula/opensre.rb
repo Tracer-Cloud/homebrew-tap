@@ -1,7 +1,7 @@
 class Opensre < Formula
   desc "Open-source SRE agent for automated incident investigation and root cause analysis"
   homepage "https://github.com/Tracer-Cloud/opensre"
-  version "0.1.2026.7.21"
+  version "0.1.2026.7.22"
   license "Apache-2.0"
 
   depends_on "gh"
@@ -9,20 +9,20 @@ class Opensre < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Tracer-Cloud/opensre/releases/download/v#{version}/opensre_#{version}_darwin-arm64.tar.gz"
-      sha256 "8ae16cfa1b870de037ccea46a5ccef4a67dff949c72e340970114aa0c8e0dc90"
+      sha256 "2aaf4753e3acb0fa90be93956e1417919b0a9d0775e64ceb6414b1ab971961f2"
     else
       url "https://github.com/Tracer-Cloud/opensre/releases/download/v#{version}/opensre_#{version}_darwin-x64.tar.gz"
-      sha256 "208697a2048b548dd93dedc05855b4c84fb759a25f1bbe69ca9149fb3fd057bf"
+      sha256 "9904b31a2073bb54d6d4fafd03edaae59bb09b6bf80ac7ca5985534aa7b5e16d"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/Tracer-Cloud/opensre/releases/download/v#{version}/opensre_#{version}_linux-arm64.tar.gz"
-      sha256 "649b95a155ba22f791913046e174f4ef3898d6e5518bdb96ddf24820dcacc9ee"
+      sha256 "786a7ee3f4b419ed81dc91764c98242263b80a5722d4aba45d317b7fa95d3c87"
     else
       url "https://github.com/Tracer-Cloud/opensre/releases/download/v#{version}/opensre_#{version}_linux-x64.tar.gz"
-      sha256 "a832fa98469fce0bc2563d8ab0b9ffebf869e98bb3d9ada18d767ad15724eac7"
+      sha256 "ed1fc11ca5ba2dd5f5e6a41c5a29d7122558373b5465dc2989258521e8bcdda6"
     end
   end
 
