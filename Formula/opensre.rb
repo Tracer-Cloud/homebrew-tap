@@ -27,10 +27,13 @@ class Opensre < Formula
   end
 
   def install
-    bin.install "opensre"
+    libexec.install Dir["*"]
+    bin.install_symlink libexec/"opensre"
   end
 
   test do
+    assert_path_exists libexec/"_internal"
     assert_match version.to_s, shell_output("#{bin}/opensre --version")
+    system bin/"opensre", "_package-smoke"
   end
 end
